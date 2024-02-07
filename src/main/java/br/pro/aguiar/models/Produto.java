@@ -11,12 +11,12 @@ public class Produto {
         if (nomeCorreto)
             this.nome = nome;
         else
-            throw new Exception("O nome precisa ter mais do que 3 letras");
+            throw new Exception("O nome precisa ter mais do que 3 letras!");
         boolean descontoCorreto = desconto <= 0.4 && desconto >= 0.0;
         if (descontoCorreto)
             this.desconto = desconto;
         else
-            throw new Exception("O desconto tem que ser entre 0 e 40%");
+            throw new Exception("O desconto tem que ser entre 0 e 40%!");
 
         this.preco = preco;
         this.quantidade = quantidade;

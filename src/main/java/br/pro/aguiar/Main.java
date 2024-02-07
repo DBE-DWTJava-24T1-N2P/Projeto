@@ -1,12 +1,15 @@
 package br.pro.aguiar;
 import br.pro.aguiar.models.Produto;
 
+import javax.swing.*;
+
 public class Main extends Thread {
     public static void main(String[] args) {
         System.out.println("Iniciando o programa.");
         Produto prod;
         try {
-            prod = new Produto("Caderno", 35.69, 0.01, 80);
+            String nome = JOptionPane.showInputDialog("Informe o nome do produto:");
+            prod = new Produto(nome, 35.69, 0.01, 80);
             var valorComDesconto = prod.getPrecoComDesconto();
             System.out.println(valorComDesconto);
             System.out.println(prod);
