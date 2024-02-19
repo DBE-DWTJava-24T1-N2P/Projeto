@@ -11,7 +11,7 @@ public class Main extends Thread {
             String nome = JOptionPane.showInputDialog("Nome do produto:");
             String precoStr = JOptionPane.showInputDialog("Preço do produto:");
             double preco = Double.parseDouble(precoStr);            
-            String descontoStr = JOptionPane.showInputDialog("Informe o desconto:");
+            String descontoStr = JOptionPane.showInputDialog("Desconto do produto:");
             double desconto = Double.parseDouble(descontoStr);
             prod = new Produto(nome, preco, desconto, 80);
             var valorComDesconto = prod.getPrecoComDesconto();
