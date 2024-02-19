@@ -26,6 +26,10 @@ public class Produto {
         this(nome, Double.parseDouble(precoStr), 0.0, 1);
     }
 
+    public Produto(String nome, String precoStr, String descontoStr) throws Exception {
+        this(nome, Double.parseDouble(precoStr), Double.parseDouble(descontoStr), 1);
+    }
+
 //    static Produto gerarProduto(String nome, String precoStr) throws Exception {
 //        double preco = Double.parseDouble(precoStr);
 //        return this(nome, preco, 0.0, 1);
