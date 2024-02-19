@@ -8,7 +8,7 @@ public class Main extends Thread {
         System.out.println("Iniciando o programa.");
         Produto prod;
         try {
-            String nome = JOptionPane.showInputDialog("Nome do produto:");
+            String nome = JOptionPane.showInputDialog("Informe o nome do produto:");
             String precoStr = JOptionPane.showInputDialog("Preço do produto:");
             double preco = Double.parseDouble(precoStr);            
             String descontoStr = JOptionPane.showInputDialog("Informe o desconto:");
