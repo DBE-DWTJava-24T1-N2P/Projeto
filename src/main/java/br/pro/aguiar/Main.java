@@ -8,10 +8,10 @@ public class Main extends Thread {
         System.out.println("Iniciando o programa.");
         Produto prod;
         try {
-            String nome = JOptionPane.showInputDialog("Informe o nome do produto:");
-            String precoStr = JOptionPane.showInputDialog("Informe o preço do produto:");
+            String nome = JOptionPane.showInputDialog("Informe o nome:");
+            String precoStr = JOptionPane.showInputDialog("Informe o preço:");
             double preco = Double.parseDouble(precoStr);            
-            String descontoStr = JOptionPane.showInputDialog("Informe o desconto do produto:");
+            String descontoStr = JOptionPane.showInputDialog("Informe o desconto:");
             double desconto = Double.parseDouble(descontoStr);
             prod = new Produto(nome, preco, desconto, 80);
             var valorComDesconto = prod.getPrecoComDesconto();
