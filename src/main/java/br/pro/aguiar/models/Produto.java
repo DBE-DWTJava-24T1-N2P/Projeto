@@ -21,6 +21,16 @@ public class Produto {
         this.preco = preco;
         this.quantidade = quantidade;
     }
+
+    public Produto(String nome, String precoStr) throws Exception {
+        this(nome, Double.parseDouble(precoStr), 0.0, 1);
+    }
+
+//    static Produto gerarProduto(String nome, String precoStr) throws Exception {
+//        double preco = Double.parseDouble(precoStr);
+//        return this(nome, preco, 0.0, 1);
+//    }
+
     public String getNome() {
         return nome;
     }
