@@ -9,7 +9,9 @@ public class Main extends Thread {
         Produto prod;
         try {
             String nome = JOptionPane.showInputDialog("Informe o nome do produto:");
-            prod = new Produto(nome, 35.69, 0.01, 80);
+            String precoStr = JOptionPane.showInputDialog("Informe o preço do produto:");
+            double preco = Double.parseDouble(precoStr);
+            prod = new Produto(nome, preco, 0.01, 80);
             var valorComDesconto = prod.getPrecoComDesconto();
             System.out.println(valorComDesconto);
             System.out.println(prod);
